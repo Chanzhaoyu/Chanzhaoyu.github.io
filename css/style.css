@@ -866,6 +866,7 @@ ul.portfolio-image li .desc {
 }
 
 .card {
+    min-height: 457px;
     background: #ffffff;
     padding: 30px 35px 45px 35px;
     margin-bottom: 30px;
