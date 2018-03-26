@@ -715,7 +715,6 @@ ul.portfolio-image li {
     display: block;
     list-style: none;
     position: relative;
-    display: inline-block;
     overflow: hidden;
     padding-top: 46%;
 }
