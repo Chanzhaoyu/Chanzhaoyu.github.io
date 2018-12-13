@@ -36,6 +36,15 @@ body {
     background-color: #fff;
 }
 
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
 a {
     color: #2f2f2f;
     text-decoration: none;
@@ -665,10 +674,12 @@ p {
         top: 2px;
         opacity: 0;
     }
+
     30% {
         top: 8px;
         opacity: 1;
     }
+
     100% {
         top: 16px;
         opacity: 0;
@@ -680,10 +691,12 @@ p {
         top: 2px;
         opacity: 0;
     }
+
     30% {
         top: 8px;
         opacity: 1;
     }
+
     100% {
         top: 16px;
         opacity: 0;
@@ -714,7 +727,7 @@ ul.portfolio-image li {
     list-style: none;
     position: relative;
     overflow: hidden;
-    padding-top: 46%;
+    padding-top: 25%;
 }
 
 ul.portfolio-image li:hover {
@@ -726,13 +739,14 @@ ul.portfolio-image li:hover img {
     transform: scale(1.15);
 }
 
+/* 
 ul.portfolio-image li:hover .image-bg {
     opacity: .7;
 }
 
 ul.portfolio-image li:hover .description-wrap {
     background: rgba(186, 186, 186, 0.6);
-}
+} */
 
 ul.portfolio-image li img {
     position: absolute;
@@ -741,7 +755,7 @@ ul.portfolio-image li img {
     left: 0;
     top: 0;
     transition: filter, transform, 0.5s;
-    -webkit-filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
 }
 
 ul.portfolio-image li .decription-wrap {
@@ -751,6 +765,7 @@ ul.portfolio-image li .decription-wrap {
     top: 0;
     left: 0;
     padding: 20px;
+    display: none !important;
 }
 
 ul.portfolio-image li .image-bg {
@@ -1266,6 +1281,7 @@ ul.portfolio-image li .desc {
     from {
         background: #5264AE;
     }
+
     to {
         width: 0;
         background: transparent;
@@ -1276,6 +1292,7 @@ ul.portfolio-image li .desc {
     from {
         background: #818181;
     }
+
     to {
         width: 0;
         background: transparent;
@@ -1286,6 +1303,7 @@ ul.portfolio-image li .desc {
     from {
         background: #818181;
     }
+
     to {
         width: 0;
         background: transparent;
@@ -1473,4 +1491,19 @@ ul.portfolio-image li .desc {
 
 .skillst .count-bar .count span:after {
     border-top: 4px solid #818181;
+}
+
+/* 2018-12-13 */
+.portfolio-image-lite{
+    padding: 0;
+}
+
+.portfolio-image-lite::before,
+.portfolio-image-lite::after {    
+    content: "";
+    display: table;
+}
+
+.portfolio-image-lite::after{
+    clear: both;
 }
