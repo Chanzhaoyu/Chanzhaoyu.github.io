@@ -193,4 +193,8 @@
     });
   }
 
+  $('.portfolio-image-lite a').on('click',function(){
+    return false;
+  })
+
 })(jQuery);
